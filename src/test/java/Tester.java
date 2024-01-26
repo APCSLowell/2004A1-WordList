@@ -13,16 +13,36 @@ public class Tester {
 
    @Test
    public void partA () {
-      APLine line1 = new APLine(5,4,-17);
-      double slope1 = line1.getSlope();
-      assertEquals(slope1,-1.25,0.01);
-      boolean onLine1 = line1.isOnLine(5,-2);
-      assertEquals(onLine1,true);
-      APLine line2 = new APLine(-25,40,30);
-      double slope2 = line2.getSlope();
-      assertEquals(slope2,0.625,0.01);
-      boolean onLine2 = line2.isOnLine(5,-2);
-      assertEquals(onLine2,false);
+      WordList test1 = new WordList();
+      test1.add("cat");
+      test1.add("mouse");
+      test1.add("frog");
+      test1.add("dog");
+      test1.add("dog");
+      int result = test1.numWordsOfLength(4);
+      assertEquals(1, result);
+      result = test1.numWordsOfLength(3);
+      assertEquals(3, result);
+      result = test1.numWordsOfLength(2);
+      assertEquals(0, result);
+   }
+
+   @Test
+   public void partB(){
+      WordList test2 = new WordList();
+      test2.add("cat");
+      test2.add("mouse");
+      test2.add("frog");
+      test2.add("dog");
+      test2.add("dog");
+      test2.removeWordsOfLength(4);
+      String result = "[cat, mouse, dog, dog]";
+      assertEquals(test2.toString(),result);
+      test2.removeWordsOfLength(3);
+      result = "[mouse]";
+      assertEquals(test2.toString(),result);
+      test2.removeWordsOfLength(2);
+      assertEquals(test2.toString(),result);
    }
 
 
