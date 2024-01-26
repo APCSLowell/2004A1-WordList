@@ -1,16 +1,19 @@
-# 2010  AP Computer Science A FRQ #2 APLine
+# 2004  AP Computer Science A FRQ #1 WordList
 
- 
+Instructions: https://secure-media.collegeboard.org/apc/ap04_frq_compsci_a_35988.pdf 
 
-Instructions:  [https://secure-media.collegeboard.org/apc/ap10_frq_computer_science_a.pdf](https://secure-media.collegeboard.org/apc/ap10_frq_computer_science_a.pdf)  
 
-Quick Reference Guide:  https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference.pdf   
+Quick Reference Guide:  [https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference.pdf](https://apstudents.collegeboard.org/ap/pdf/ap-computer-science-a-java-quick-reference.pdf) 
+
 
 The correct answer outputs should be as follows.  
-
  
 
 ```
--1.25 true
-0.625 false
+******* A-1 *******
+[cat, mouse, frog, dog, dog] 1 3 0
+******* A-2 *******
+[cat, mouse, dog, dog]
+[mouse]
+[mouse]
 ```
